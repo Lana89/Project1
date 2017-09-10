@@ -1,0 +1,237 @@
+/*************************************************
+                        Global
+**************************************************/
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color: #EEE;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.4;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+  margin: 0;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+p {
+  color: #000000;
+  margin: 0;
+  padding: 10px 10px 10px 0;
+}
+
+a:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+small {
+  font-size: 12px;
+  padding: 25px;
+}
+
+main, footer {
+  background-color: #fff;
+}
+/*************************************************
+                        Layout
+**************************************************/
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.col-1-2, .col-1-4, .col-1 {
+  float: left;
+}
+
+.col-1-2 {
+  width: 50%;
+  padding: 25px;
+}
+
+.col-1-4 {
+  width: 25%;
+  padding: 25px;
+}
+
+.col-1 {
+  width: 100%;
+  padding: 25px;
+}
+
+/*************************************************
+                        Specific
+**************************************************/
+
+.main-header {
+  width: 100%;
+  background-color: #333;
+  height: 60px;
+}
+
+nav {
+  float: right;
+  height: 60px;
+  margin-top: 14px;
+}
+
+nav ul li {
+  padding: 0 25px;
+  height: 30px;
+  border-right: 1px solid #fff;
+  float: left;
+  line-height: 1;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+}
+
+nav ul li a:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+#firstH1 a {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  color: #333333;
+  padding-left: 30px;
+}
+
+#secondH1 a {
+  font-size: 40px;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  text-decoration: none;
+  padding-left: 30px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+#secondH1 {
+  padding-bottom: 30px;
+}
+
+.sec1 {
+  border-top: 1px solid black;
+  /*Pokusavala sam da dodam border gore ali tako da bude na sredini i sirine 900px ali nisam uspela, iako sam koristila isti kod kao za footer. Nije mi jasno zasto ne radi. :( */
+  padding: 25px 5px 0 30px;
+}
+
+img {
+  float: right;
+  width: 450px;
+  height: 300px;
+}
+
+.sec2 {
+  padding: 25px 0 25px 30px;
+}
+
+.sec3 {
+  padding-left: 30px;
+}
+
+.contrast {
+  background-color: #333;
+  color: #fff;
+}
+
+.motivation {
+  background-color: #333;
+  color: #fff;
+  font-size: 30px;
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: right;
+  margin: 30px;
+  width: 900px;
+}
+
+.green {
+  font-size: 80px;
+  color: #00CC66;
+  display: inline;
+}
+
+.blue {
+  font-size: 30px;
+  color: #6699CC;
+  text-align: right;
+}
+
+footer {
+  padding: 25px;
+  margin: 50px 0 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+footer::before {
+  content: " ";
+  position: absolute;
+  width: 900px;
+  border-top: 1px solid black;
+}
+/*************************************************
+                        Helper
+**************************************************/
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
